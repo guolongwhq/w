@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+
+</head>
+<script src="jquery.js"></script>
+<script>
+    $(function(){
+        $(".submit").click(function(){
+            if($("textarea").val()==""){
+                alert("不能为空");
+                return false;
+            }
+            else{
+
+            }
+            if($(".text").val()==""){
+                alert("不能为空");
+                return false;
+            }
+        })
+    })
+</script>
+<style>
+    form{
+        width: 300px;
+        margin:auto;
+    }
+</style>
+<body>
+<form action="index.php" method="get">
+标题：<input type="text" name="title" class="text"><br>
+内容：<textarea name="con" id="" cols="30" rows="10"></textarea><br>
+<input type="submit" value="提交" class="submit">
+</form>
+</body>
+</html>

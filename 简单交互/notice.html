@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .box{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        left: 0;top:0;right: 0;bottom:0;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+    }
+</style>
+<script src="jquery.js"></script>
+<script>
+    $(function(){
+        var num=5;
+        setInterval(function(){
+            num--;
+            if(num==0){
+                location.href="index.html";
+            }
+            else{
+                $("span").html(num);
+            }
+        },1000)
+    })
+</script>
+<body>
+<div class="box">
+    <div class="title">提示</div>
+    <div class="con">插入成功<br>
+    <span>5</span>秒后返回页面</div>
+</div>
+</body>
+</html>
